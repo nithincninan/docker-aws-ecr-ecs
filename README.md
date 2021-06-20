@@ -1,2 +1,1 @@
-# magento-docker-ecs
-Magento > Docker > ECR > ECS
+# DOCKER > ECR > ECS - Magento
