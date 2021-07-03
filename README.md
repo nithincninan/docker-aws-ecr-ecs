@@ -1,8 +1,13 @@
 # DOCKER > ECR > ECS
 
-**Deploy and run Docker containers on AWS ECS**
+**Deploy and run Docker containers on AWS ECS**:
 
 
+
+**ECS - Image from AWS**
+![docker-aws-ecs-arch](https://user-images.githubusercontent.com/2525741/124363214-a09f6c00-dc57-11eb-91a6-6f1e365df8f9.png)
+
+ 
 1. Prerequisites:
 
   * Download and install the latest version of Docker Desktop.
