@@ -104,7 +104,7 @@
                 * Task CPU (unit) : 512
             3. Add Container
    ```
-   ![Uploading configure-task-and-container-image.png…]()
+   ![configure-task-and-container-image](https://user-images.githubusercontent.com/2525741/124397170-f9403900-dd2b-11eb-925b-23e3f58ce592.png)
    
    <img width="1091" alt="add-container" src="https://user-images.githubusercontent.com/2525741/124397135-bd0cd880-dd2b-11eb-80e6-7e625811d0ce.png">
    
