@@ -6,7 +6,7 @@
 
 ![docker-aws-ecs-arch](https://user-images.githubusercontent.com/2525741/124363214-a09f6c00-dc57-11eb-91a6-6f1e365df8f9.png)
 
-1. Prerequisites:
+**Prerequisites:**
 
   * Download and install the latest version of Docker Desktop.
   
@@ -19,7 +19,7 @@
   
   
 
-2. Create a repository using ECR(Elastic Container Repository):
+**1. Create a repository using ECR(Elastic Container Repository):**
     
     1. Click on Repository (Create Repository)
     
@@ -54,7 +54,7 @@
           
       <img width="1076" alt="pushed-image" src="https://user-images.githubusercontent.com/2525741/124391746-b1abb400-dd0f-11eb-90af-d9a1917e2dd8.png">
 
-3. Push docker image to ECR repo(from local):
+**3. Push docker image to ECR repo(from local):**
   
     <!-- comming soon --->
   
