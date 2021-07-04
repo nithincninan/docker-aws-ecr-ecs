@@ -83,6 +83,37 @@
    
    <img width="693" alt="Task-done" src="https://user-images.githubusercontent.com/2525741/124395951-a020d700-dd24-11eb-9245-05641966d87a.png">
 
+
+**Step 4. Task Definition**
+    
+   4.1 click on “Task Definition”.
+   
+   4.2 Create new Task Definition 
+   
+   ```
+      > Choose EC2
+   ```
+   
+   
+   ```
+      * Configure Task:
+            1. Task Definition Name: docker-nginx-welcome-image-task
+            2. Task size: 
+                * Task memory (MiB) : 512
+                * Task CPU (unit) : 512
+            3. Add Container
+   ```
+   
+   4.3 Task: create service
+   
+   
+   ```
+      * Launch Type: EC2
+      * Number of tasks: 1  
+      
+      * Review > Create Service
+   ``` 
+    
   
 **About AWS services/tools:**    
  
