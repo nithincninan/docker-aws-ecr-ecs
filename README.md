@@ -1,4 +1,4 @@
-# DOCKER > ECR > ECS
+# DOCKER >> ECR >> ECS
 
 **Deploy and run Docker containers on AWS ECS**:
 
@@ -19,12 +19,43 @@
         
   * Ensure you have an AWS account / AWS CLI is installed and configured
   
+  
 
-2. Create a repository using ECR:
+2. Create a repository using ECR(Elastic Container Repository):
+    
+    1. Click on Repository (Create Repository)
+    
+    2. Repository name: docker-nginx-welcome-image
+    
+    3. Click view push commands :
+     
+           * Push commands for docker-nginx-welcome-image
+           
+           
+           
+           Note: make sure aws cli/configure is installed in OS (mac/windows/linux). If not go below:
+           
+           * MAC: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
+           * Windows: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html
+           
+           * verify aws-clis installed: aws --version
+           
+           * Run command: aws configure
+           
+           * configure access key ID and secret access key in Identity and Access Management (IAM) > Access keys:
+            
+             - https://console.aws.amazon.com/iam/home?#/security_credentials
+             
+             eg: - aws configure
+                   AWS Access Key ID [None]: XXXXXXXX
+                   AWS Secret Access Key [None]: XXXXXXXXXXXXXXXXXXXX
+                   Default region name [None]: ap-south-1
+                   Default output format [None]: json
+          
+    4. Images has been pushed to the ECR repo.
+          
 
-
-
-3. Push docker image to ECR repo(from local)
+3. Push docker image to ECR repo(from local):
   
   
   
