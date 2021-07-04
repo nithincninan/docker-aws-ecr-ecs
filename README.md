@@ -57,8 +57,22 @@
 
 **Step 3. Create a ACS Elastic Cluster Service**
 
-    
-
+   3.1 Create cluster:
+            * select cluster template > EC2 linux + networking
+            * configure cluster 
+                1. configure name: docker-nginx-welcome-image
+                2. Provisioning Model : On-Demand Instance
+                3. ec2 Intance type: t2.micro
+                4. No: of instance: 1
+                5. Key pair: Create new (docker-nginx-welcome-ecs)
+                6. EBS Volme size: 30
+            * networking: 
+                1. Security group inbound rules: 0.0.0.0/0
+                     (determines the trafic that can reach your instance)
+                2. Port range : 80
+            * click "Create cluster" button.
+                     
+   3.2 View Cluster:
 
   
 **About AWS services/tools:**    
@@ -68,4 +82,8 @@
  It allows applications/containers to run on top of EC2 hosts.
  
    **AWS ECR:** Similar to the Docker hub, Amazon has a feature called Elastic Container Register, which allows you to deploy your Docker container to AWS. 
+   
+   **Refer:** 
+        
+        * https://aws.amazon.com/getting-started/hands-on/deploy-docker-containers/
  
