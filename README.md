@@ -60,9 +60,10 @@
    3.1 Create cluster:
    ```
         * select cluster template > EC2 linux + networking
-  ```
+   ```
    <img width="1149" alt="create-cluster" src="https://user-images.githubusercontent.com/2525741/124395869-343e6e80-dd24-11eb-9857-c6f1f3cd72f0.png">
-  ```      
+
+   ```      
         * configure cluster 
             1. configure name: docker-nginx-welcome-image
             2. Provisioning Model : On-Demand Instance
@@ -75,7 +76,7 @@
                  (determines the trafic that can reach your instance)
             2. Port range : 80
          * click "Create cluster" button.
-```         
+  ```         
    ![cluster-configure](https://user-images.githubusercontent.com/2525741/124395888-4ae4c580-dd24-11eb-8e55-2799a1c88a7c.png)
                      
    3.2 View Cluster:
