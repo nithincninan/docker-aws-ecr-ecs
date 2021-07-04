@@ -19,7 +19,7 @@
   
   
 
-**1. Create a repository using ECR(Elastic Container Repository):**
+1. **Create a repository using ECR(Elastic Container Repository):**
     
     1. Click on Repository (Create Repository)
     
@@ -54,7 +54,7 @@
           
       <img width="1076" alt="pushed-image" src="https://user-images.githubusercontent.com/2525741/124391746-b1abb400-dd0f-11eb-90af-d9a1917e2dd8.png">
 
-**3. Push docker image to ECR repo(from local):**
+3. **Push docker image to ECR repo(from local):**
   
     <!-- comming soon --->
   
