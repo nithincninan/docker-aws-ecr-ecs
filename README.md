@@ -1,4 +1,3 @@
-<img width="1076" alt="Screenshot 2021-07-04 at 9 27 44 PM" src="https://user-images.githubusercontent.com/2525741/124391702-7f01bb80-dd0f-11eb-9d98-2d05386fc30f.png">
 # DOCKER >> ECR >> ECS
 
 **Deploy and run Docker containers on AWS ECS**:
@@ -27,11 +26,10 @@
     2. Repository name: docker-nginx-welcome-image
     
     3. Click view push commands :
-     
-           * Push commands for docker-nginx-welcome-image
-           
+    
+          * Push commands for docker-nginx-welcome-image
            ![aws-push](https://user-images.githubusercontent.com/2525741/124391731-a0fb3e00-dd0f-11eb-9719-9f7eba7d8f6e.png)
-
+     
            
            Note: make sure aws cli/configure is installed in OS (mac/windows/linux). If not go below:
            
@@ -58,9 +56,7 @@
 
 3. Push docker image to ECR repo(from local):
   
-  
-  
-  
+    <!-- comming soon --->
   
 About AWS services/tools:    
  
