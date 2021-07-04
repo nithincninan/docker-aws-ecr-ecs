@@ -1,4 +1,4 @@
-# DOCKER --> ECR --> ECS
+# DOCKER ( Nginx ) -> ECR -> ECS
 
 **Deploy and run Docker containers on AWS ECS**:
 
@@ -94,6 +94,7 @@
       > Choose EC2
    ```
    
+   ![create-new-task](https://user-images.githubusercontent.com/2525741/124397125-a6ff1800-dd2b-11eb-9035-2447fcb383d5.png)
    
    ```
       * Configure Task:
@@ -103,9 +104,13 @@
                 * Task CPU (unit) : 512
             3. Add Container
    ```
+   ![Uploading configure-task-and-container-image.png…]()
+   
+   <img width="1091" alt="add-container" src="https://user-images.githubusercontent.com/2525741/124397135-bd0cd880-dd2b-11eb-80e6-7e625811d0ce.png">
    
    4.3 Task: create service
    
+   <img width="630" alt="create-service" src="https://user-images.githubusercontent.com/2525741/124397147-d0b83f00-dd2b-11eb-9dbe-bcaa946841b7.png">
    
    ```
       * Launch Type: EC2
@@ -113,7 +118,9 @@
       
       * Review > Create Service
    ``` 
-    
+   
+   <img width="869" alt="configure-service" src="https://user-images.githubusercontent.com/2525741/124397155-d57cf300-dd2b-11eb-92d9-bbb6f1438f10.png">
+
   
 **About AWS services/tools:**    
  
