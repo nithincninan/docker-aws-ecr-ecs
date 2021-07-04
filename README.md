@@ -1,4 +1,4 @@
-# DOCKER --> ECR --> ECS
+# DOCKER ( Nginx ) -> ECR -> ECS
 
 **Deploy and run Docker containers on AWS ECS**:
 
@@ -58,22 +58,86 @@
 **Step 3. Create a ACS Elastic Cluster Service**
 
    3.1 Create cluster:
-            * select cluster template > EC2 linux + networking
-            * configure cluster 
-                1. configure name: docker-nginx-welcome-image
-                2. Provisioning Model : On-Demand Instance
-                3. ec2 Intance type: t2.micro
-                4. No: of instance: 1
-                5. Key pair: Create new (docker-nginx-welcome-ecs)
-                6. EBS Volme size: 30
-            * networking: 
-                1. Security group inbound rules: 0.0.0.0/0
-                     (determines the trafic that can reach your instance)
-                2. Port range : 80
-            * click "Create cluster" button.
+   ```
+        * select cluster template > EC2 linux + networking
+   ```
+   <img width="1149" alt="create-cluster" src="https://user-images.githubusercontent.com/2525741/124395869-343e6e80-dd24-11eb-9857-c6f1f3cd72f0.png">
+
+   ```      
+        * configure cluster 
+            1. configure name: docker-nginx-welcome-image
+            2. Provisioning Model : On-Demand Instance
+            3. ec2 Intance type: t2.micro
+            4. No: of instance: 1
+            5. Key pair: Create new (docker-nginx-welcome-ecs)
+            6. EBS Volme size: 30
+        * networking: 
+            1. Security group inbound rules: 0.0.0.0/0
+                 (determines the trafic that can reach your instance)
+            2. Port range : 80
+         * click "Create cluster" button.
+  ```         
+   ![cluster-configure](https://user-images.githubusercontent.com/2525741/124395888-4ae4c580-dd24-11eb-8e55-2799a1c88a7c.png)
                      
    3.2 View Cluster:
+   
+   <img width="693" alt="Task-done" src="https://user-images.githubusercontent.com/2525741/124395951-a020d700-dd24-11eb-9245-05641966d87a.png">
 
+
+**Step 4. Task Definition**
+    
+   4.1 click on “Task Definition”.
+   
+   4.2 Create new Task Definition 
+   
+   ```
+      > Choose EC2
+   ```
+   
+   ![create-new-task](https://user-images.githubusercontent.com/2525741/124397125-a6ff1800-dd2b-11eb-9035-2447fcb383d5.png)
+   
+   ```
+      * Configure Task:
+            1. Task Definition Name: docker-nginx-welcome-image-task
+            2. Task size: 
+                * Task memory (MiB) : 512
+                * Task CPU (unit) : 512
+            3. Add Container
+   ```
+   ![configure-task-and-container-image](https://user-images.githubusercontent.com/2525741/124397170-f9403900-dd2b-11eb-925b-23e3f58ce592.png)
+   
+   <img width="1091" alt="add-container" src="https://user-images.githubusercontent.com/2525741/124397135-bd0cd880-dd2b-11eb-80e6-7e625811d0ce.png">
+   
+   
+   4.3 Task: create service
+   
+   
+   <img width="630" alt="create-service" src="https://user-images.githubusercontent.com/2525741/124397147-d0b83f00-dd2b-11eb-9dbe-bcaa946841b7.png">
+   
+   ```
+      * Launch Type: EC2
+      * Number of tasks: 1  
+      
+      * Review > Create Service
+   ``` 
+   
+   <img width="869" alt="configure-service" src="https://user-images.githubusercontent.com/2525741/124397155-d57cf300-dd2b-11eb-92d9-bbb6f1438f10.png">
+
+
+   Now we are all set!!!!!!!
+   
+**Step 5. Checking and lauch url on aws**
+
+    1. Go to EC2 instances
+    2. Copy either Public IPv4 address or DNS
+    3. Open it with port 8080 on browser
+           eg: - http://65.1.2.67:8080/
+    4. If you succeed, congratulation, now your app is online. If not, continue with these steps:
+    
+        * Click on the link next to Security group > click on the Security group ID
+        * Add inbound rules/outbount rules      
+        
+      These will allow anyone to go to your public link.  
   
 **About AWS services/tools:**    
  
