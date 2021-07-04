@@ -14,10 +14,8 @@
       * Alternatively, install the Docker Compose CLI for Linux.
         
   * Ensure you have an AWS account / AWS CLI is installed and configured
-  
-  
 
-Step 1. **Create a repository using ECR(Elastic Container Repository):**
+**Step 1. Create a repository using ECR(Elastic Container Repository):**
     
     1.1 Click on Repository (Create Repository)
     
@@ -43,7 +41,7 @@ Step 1. **Create a repository using ECR(Elastic Container Repository):**
                Default output format [None]: json
                   
     
-Step 2. **Push docker image to ECR repo(from local):**
+**Step 2. Push docker image to ECR repo(from local):**
   
    2.1 Click ( view push commands ) :
         
@@ -57,13 +55,13 @@ Step 2. **Push docker image to ECR repo(from local):**
    <img width="1076" alt="pushed-image" src="https://user-images.githubusercontent.com/2525741/124391746-b1abb400-dd0f-11eb-90af-d9a1917e2dd8.png">
 
 
-Step 3. **Create a ACS Elastic Cluster Service**
+**Step 3. Create a ACS Elastic Cluster Service**
 
     
 
 
   
-About AWS services/tools:    
+**About AWS services/tools:**    
  
    **AWS ECS:**  Amazon Elastic Container Service (Amazon ECS) is a container orchestration/management service similar to Kubernetes, Docker Swarm, etc. 
  It’s a highly scalable and high-performance service that comes with Docker pre-installed. 
