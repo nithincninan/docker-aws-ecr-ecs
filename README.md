@@ -1,4 +1,4 @@
-# DOCKER >> ECR >> ECS
+# DOCKER --> ECR --> ECS
 
 **Deploy and run Docker containers on AWS ECS**:
 
