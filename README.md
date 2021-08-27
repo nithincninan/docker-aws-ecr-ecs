@@ -39,7 +39,6 @@
                AWS Secret Access Key [None]: XXXXXXXXXXXXXXXXXXXX
                Default region name [None]: ap-south-1
                Default output format [None]: json
-                  
     
 **Step 2. Push docker image to ECR repo(from local):**
   
