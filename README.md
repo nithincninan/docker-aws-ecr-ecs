@@ -138,9 +138,9 @@
         
       These will allow anyone to go to your public link.  
   
-**About AWS services/tools:**    
- 
-   **AWS ECS:**  Amazon Elastic Container Service (Amazon ECS) is a container orchestration/management service similar to Kubernetes, Docker Swarm, etc. 
+**About AWS services/tools:** 
+
+    **AWS ECS:**  Amazon Elastic Container Service (Amazon ECS) is a container orchestration/management service similar to Kubernetes, Docker Swarm, etc. 
  It’s a highly scalable and high-performance service that comes with Docker pre-installed. 
  It allows applications/containers to run on top of EC2 hosts.
  
